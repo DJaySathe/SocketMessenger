@@ -32,7 +32,6 @@ public class Client {
 		in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		out = new PrintWriter(socket.getOutputStream(), true);
 
-		// Process all messages from server, according to the protocol.
 		while (true) {
 			String line = in.readLine();
 			if (line.startsWith("YourName?")) {
@@ -47,10 +46,6 @@ public class Client {
 			}
 		}
 	}
-
-	/**
-	 * Runs the client as an application with a closeable frame.
-	 */
 	public static void main(String[] args) throws Exception {
 		Client client = new Client();
 		client.run();
