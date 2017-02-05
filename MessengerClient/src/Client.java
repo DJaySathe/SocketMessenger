@@ -5,8 +5,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
 public class Client {
 
 	BufferedReader in;
